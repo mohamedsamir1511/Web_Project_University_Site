@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Welcome Page </title>
+    <link rel="stylesheet" type="text/css" href="WelcomePage.css" />
+    <script type="text/javascript">
+        function signUp(){
+        location.href = "signUp.html";
+        }
+        function signIn(){
+        location.href = "signIn.html";
+        }
+        function adminPage(){
+        location.href = "adminSignIn.html";
+        }
+    </script>
+</head>
+<body>
+    <br>
+    <div id="navbar">
+
+
+        <h6>WELCOME TO FCIS</h6>
+
+    </div>
+    <div id="data">
+        <img src="Logo.png" width="200" height="200" />
+        <br>
+        <br />
+        <input type="button" id="signUp" value="  Sign Up "onclick="signUp()" />
+        <br />
+
+        <br />
+        <input type="button" id="signIn" value="  Sign In "onclick="signIn()" />
+        <br />
+        <br />
+        <input type="button" id="adminPage" value="  Admin Page "onclick="adminPage()" />
+    </div>
+</body>
+</html>

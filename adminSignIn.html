@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login Page</title>
+    <link type="text/css" rel="stylesheet" href="SignUp.css" />
+    <script type="text/javascript">
+        var valid = true;
+        function signIn(){
+        if(document.signInForm.Email.value!= "admin@gmail.com") {
+        alert("Wrong email! Please try again");
+        document.signInForm.Email.focus();
+        valid = false;
+        }
+        else if(document.signInForm.Password.value!="admin") {
+        alert("Wrong password! Please try again");
+        document.signInForm.Password.focus();
+        valid = false;
+        }
+        else {
+        alert("Welcome ");
+        location.href = "adminPage.html";
+        }
+        return valid;
+        }
+    </script>
+</head>
+<body>
+    <br>
+    <img src="Logo.png" width="200" height="200" />
+    <br>
+    <h5>Admin Login</h5>
+    <br>
+
+    <form name="signInForm" onsubmit="return signIn()">
+        Email<input type="text" name="Email" />
+        <br />
+        <br>
+        Password<input type="password" name="Password" id="Password" />
+        <br />
+        <br>
+        <input type="submit" id="submit" value="Sign In" />
+        <br>
+    </form>
+</body>
+</html>

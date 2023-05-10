@@ -1,0 +1,29 @@
+body {
+    background-image: url("Home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font: bold;
+    color: yellow;
+    font-size: 25px;
+}
+
+
+
+h1 {
+    margin: 20px 0;
+    font-size: 40px;
+    color: yellow;
+}
+.container {
+    width: 150px;
+    height: 100px;
+    border: none;
+    color: black;
+    border-radius: 3.5px;
+    outline: none;
+    border: 0;
+    margin: 0;
+    background-color: yellow;
+    font-size: larger;
+}

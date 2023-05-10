@@ -1,0 +1,20 @@
+
+
+body {
+    background-image: url("Home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: yellow;
+    text-align: center;
+}
+
+h5 {
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+#submit {
+    color: yellow;
+    background-color: Highlight;
+}

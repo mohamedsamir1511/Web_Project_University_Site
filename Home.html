@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Home Page </title>
+    <link rel="stylesheet" type="text/css" href="Home.css" />
+    <script type="text/javascript">
+        function signOut() {
+        location.href = "welcomePage.html";
+        }
+        function leaders() {
+        location.href = "Leaders.html";
+        }
+        function departments() {
+        location.href = "Departments.html";
+        }
+        function subjects() {
+        location.href = "Subjects.html";
+        }
+        function places() {
+        location.href = "Places.html";
+        }
+    </script>
+</head>
+<body>
+    <br>
+    <h1>Faculty of computer and information science at Ain shams university</h1>
+    <div id="navbar">
+
+        <button class="container" onclick="signOut()">تسجيل الخروج  </button>
+
+
+        <button class="container" onclick="leaders()">قيادات الكلية</button>
+
+        <button class="container" onclick="places()">أماكن الكلية</button>
+
+        <button class="container" onclick="departments()">أقسام الكلية </button>
+
+        <button class="container" onclick="subjects()">المقررات الدراسية</button>
+        <br />
+        <br />
+
+
+
+
+
+
+      
+        <div class="slideshow-container">
+
+
+
+
+            
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="1.jpg" style="width:100%">
+                <div class="text">Caption One</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+      
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+
+
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+
+        </script>
+        
+        
+        
+        <br>
+
+    </div>
+</body>
+</html>

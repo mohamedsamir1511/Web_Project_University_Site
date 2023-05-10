@@ -1,0 +1,46 @@
+body {
+    margin: -10px;
+    border: -10px;
+    background-image: url("Home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#navbar {
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+h6 {
+    color: yellow;
+    font: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+button {
+    text-align: center inherit;
+}
+
+#data {
+    text-align: center;
+}
+
+#signUp {
+    color: yellow;
+    background-color: Highlight;
+}
+
+#signIn {
+    color: yellow;
+    background-color: Highlight;
+}
+
+#adminPage {
+    color: yellow;
+    background-color: Highlight;
+}
